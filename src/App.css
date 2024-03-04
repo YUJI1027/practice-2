@@ -1,38 +1,138 @@
-.App {
+
+
+/* ヘッダーのロゴのフォント */
+.pop {
+  font-family: 'Playfair Display', serif;
+}
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* ヘッダー */
+header {
+  padding: 27px 0;
+}
+.logo {
+  font-size: 24px;
+  letter-spacing: -0.04em;
+  color: black;
+}
+.logo span {
+  color: #80BA4A;
+}
+#item-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 20px;
+}
+#item-box .header_menu li {
+  color: black;
+}
+.header_menu li a {
+  transition: .3s;
+}
+.header_menu li a:hover {
+  color: #80BA4A;
+  transition: .3s;
+}
+
+/* メイン */
+#hero {
+  background-image: url(/images/nathan-dumlao-NXMZxygMw8o-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+.hero_inner {
+  z-index: 2;
+  color: white;
+  width: 100%;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero_inner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.hero_inner h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* トレーニング */
+#training {
+  margin-bottom: 120px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.titile {
+  font-size: 20px;
+  font-weight: 500;
+  color: #80BA4A;
+  margin-bottom: 40px;
+}
+
+#training h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 60px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#training h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#training .column-2 {
+  width: 48%;
+}
+#training a {
+  font-size: 18px;
+  border: solid 1px black;
+  border-radius: 30%;
+  display: inline-block;
+  width: 270px;
+  line-height: 60px;
+  text-align: center;
+  color: black;
+}
+.text {
+  line-height: 2;
+  color: black;
+}
+.content-img {
+  background-image: url(/images/mohamed-fareed-rbSNsoXk-3A-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 20px;
 }
